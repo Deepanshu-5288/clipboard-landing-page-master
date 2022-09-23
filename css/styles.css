@@ -4,6 +4,7 @@ body{
     background-repeat: no-repeat;
 background-size: 100%;
 font-size: 1.125rem;
+font-family: 'Bai Jamjuree', sans-serif;
 }
 main{
     display: flex;
@@ -11,6 +12,39 @@ main{
     flex-direction: column;
     text-align: center;
     align-content: center;
+    color: hsl(210, 10%, 33%);
+}
+
+p{
+    color: hsl(201, 11%, 66%);
+}
+a{
+    color: hsl(210, 10%, 33%);
+    text-decoration: none;
+}
+button{
+    padding: .8rem 1.5rem;
+    border-radius: 2rem;
+    color: white;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+a:hover{
+    color:hsl(171, 66%, 44%);
+}
+.btn-ios{
+    background-color: hsl(171, 66%, 44%);
+}
+.btn-mac{
+    background-color: hsl(233, 100%, 69%);
+}
+.btn-ios:hover{
+    background-color: hsl(171, 51%, 42%);
+}
+.btn-mac:hover{
+    background-color: hsl(233, 88%, 76%);
 }
 .div1{
     width: 35rem;
@@ -28,10 +62,10 @@ main{
 .img-computer{
     position: absolute;
     left: -2rem;
-    top: 50rem;
+    top: 55rem;
 }
 .img-device{
-    width: 50rem;
+    width: 70%;
     margin: 5rem auto 0;
 }
 
@@ -74,11 +108,12 @@ footer{
 }
 
 .div7 > a{
-    padding:.4rem .7rem 0;
+    padding:.6rem .7rem 0;
 }
 .footer-logo{
     width: 3rem;
     height: 3rem;
+    margin: auto 0;
 }
 
 .div8{
@@ -91,4 +126,147 @@ footer{
 .div8 > img{
     width: 1rem;
     height: 1rem;
+}
+
+@media screen and (max-width: 78.125rem) and (min-width: 50rem) {
+    .img-computer{
+        position: static;
+        width: 80%;
+        margin:5rem  auto;
+    }
+    .div2{
+        width: 25rem;
+        margin:  auto;
+    }
+    .logo-div{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 4rem;
+        width: 80%;
+        justify-content: space-evenly;
+        margin: 5rem auto;
+    }
+    .div7{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 50rem) and (min-width: 36.875rem) {
+    .img-computer{
+        position: static;
+        width: 80%;
+        margin:5rem  auto;
+    }
+    .div2{
+        width: 25rem;
+        margin:  auto;
+    }
+    .logo-div{
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 4rem;
+        width: 10.5rem;
+        justify-content: space-evenly;
+        margin: auto auto 4rem auto ;
+    }
+    .div7{
+        width: 40%;
+    }
+    .div4{
+        flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin:5rem auto;
+    row-gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 36.875rem) {
+    main{
+        flex-direction: column;
+    }
+    .img-computer{
+        position: static;
+        width: 80%;
+        margin:5rem  auto;
+    }
+    .div1{
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: .5rem;
+    }
+    .div2{
+        width: 25rem;
+        margin:  auto;
+    }
+    .div3{
+        width: 25rem;
+        margin:  auto;
+    }
+    .logo-div{
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 4rem;
+        width: 10.5rem;
+        justify-content: space-evenly;
+        margin: auto auto 4rem auto ;
+    }
+    .div7{
+        width: 40%;
+    }
+    .div4{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin:5rem auto;
+    row-gap: 3rem;
+    }
+    
+
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 0;
+        min-height: 25rem;
+    }
+    .div7{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 1rem;
+        margin:0 auto;
+    }
+    
+    .div7 > a{
+        padding:0;
+    }
+    .footer-logo{
+        width: 3rem;
+        height: 3rem;
+        margin: auto ;
+    }
+    
+    .div8{
+        width: 8rem;
+        margin: auto ;
+    }
+    
+    .div8 > img{
+        width: 1rem;
+        height: 1rem;
+    }
+    .div6{
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: .5rem;
+    }
 }
